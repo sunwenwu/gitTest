@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://10.143.108.41:3306/gcsp_dev" />
+                <property name="username" value="gcsp_dev" />
+                <property name="password" value="41gcsp_dev" />
+            </dataSource>
+        </environment>
+    </environments>
+    
+      <mappers>
+         <mapper resource="dd/mapping/LsysMapper.xml"/>
+    </mappers>
+    
+    
+</configuration>
